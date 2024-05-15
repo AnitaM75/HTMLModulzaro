@@ -1,0 +1,199 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap; 
+    margin-bottom: 32px; 
+}
+
+.first-part, .second-part {
+    flex: 1;
+    padding: 16px;
+    box-sizing: border-box; 
+    min-width: 300px; 
+}
+
+.first-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.first-part h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.first-part p {
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+.first-part button {
+    background-color: rgb(79, 70, 229);
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-top: 16px;
+    border-radius: 4px;
+}
+
+.first-part button:hover {
+    background-color: rgb(67, 56, 202);
+}
+
+.second-part {
+    display: grid;
+    gap: 16px;
+}
+
+.card {
+    border: 4px solid rgb(243, 244, 246);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    transition: border-color 0.3s;
+}
+
+.card:hover {
+    border-color: rgb(229, 231, 235);
+}
+
+.card h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.icon img {
+    background-color: rgb(249, 250, 251);
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 25%;
+    height: auto;
+    
+}
+
+.third-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    max-width: 512px;
+    width: 100%;
+    padding: 0 16px;
+    text-align: center;
+    color: rgb(107, 114, 128);
+  }
+  
+  .third-part h3 {
+    font-size: 30px;
+    color: black;
+    margin: 32px 0 16px; 
+  }
+  
+  .third-part input {
+    width: 100%;
+    max-width: 448px;
+    min-width: 352px;
+    border: 4px solid rgb(229, 231, 235);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  .third-part input[type="text"]::placeholder {
+    color: rgb(107, 114, 128);
+  }
+  
+  .third-part button {
+    background-color: rgb(79, 70, 229);
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-top: 16px;
+    border-radius: 4px;
+    
+  }
+  
+  .third-part button:hover {
+    background-color: rgb(67, 56, 202);
+  }
+  
+  .third-part .account {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    max-width: 448px;
+    min-width: 352px;
+    width: 100%;
+    margin-left: 10px;
+  }
+  
+  .third-part .account a {
+    justify-content: left;
+    color: rgb(107, 114, 128);
+    margin-left: 10px;
+  }
+  
+  .third-part .account button {
+    margin-left: 120px;
+  }
+
+  .third-part .account p {
+    align-items: center;
+    justify-content: center;
+    
+  }
+ #tp {
+    width: 650px;
+
+ }
+
+ @media (min-width: 600px) {
+    .second-part {
+        grid-template-columns: repeat(3, minmax(120px, 176px));
+        grid-template-rows: repeat(2, 165px);
+    }
+}
+
+@media (max-width: 599px) {
+    .second-part {
+        grid-template-columns: repeat(2, minmax(120px, 176px));
+        grid-template-rows: repeat(3, 165px);
+    }
+}
+ 
